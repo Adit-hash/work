@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="table-users">
+   <div class="header">Total Bill</div>
+     <table>
+      <tr>
+        <td>
+          Item1 
+        </td>
+        <td>
+          {{result['item1']}}
+        </td>
+        
+      </tr>
+      <tr>
+        <td>
+          Item2
+        </td>
+        <td>
+          {{result['item2']}}
+        </td>
+        
+      </tr>
+      <tr>
+        <td>
+          Item3 
+        </td>
+        <td>
+          {{result['item3']}}
+        </td>
+        
+      </tr>
+      <tr>
+        <td>
+          Item4 
+        </td>
+        <td>
+          {{result['item4']}} 
+        </td>
+        
+      </tr>
+      <tr>
+        <td>
+          Total 
+        </td>
+        <td>
+          {{result['sum']}} 
+        </td>
+        
+      </tr>
+      <tr>
+        <td>
+          Discount 
+        </td>
+        <td>
+          {{result['dis']}}%
+        </td>
+        
+      </tr>
+      <tr>
+        <td>
+          Total  after discount
+        </td>
+        <td>
+          {{result['total']}} 
+        </td>
+        
+      </tr>
+      
+     </table>
+</div>
+</body>
+</html>
